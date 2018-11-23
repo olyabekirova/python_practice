@@ -1,1 +1,5 @@
 plt.twinx() to overlay plots with different vertical scales on a common horizontal axis.
+
+plt.imshow() - to load image
+
+
