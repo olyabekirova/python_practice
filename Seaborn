@@ -24,3 +24,6 @@ ax.set(xlabel="1 Bedroom Fair Market Rent",
 
 # Display the plot
 plt.show()
+
+
+Use a capsize in the pointplot in order to show the confidence interval.
