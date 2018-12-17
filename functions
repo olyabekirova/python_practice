@@ -2,4 +2,26 @@ plt.twinx() to overlay plots with different vertical scales on a common horizont
 
 plt.imshow() - to load image
 
+.str.strip() to strip extra whitespace 
+
+.str.contains
+
+.reindex
+
+
+# Combine two columns of data to create a datetime series: times_tz_none 
+
+times_tz_none = pd.to_datetime( la['Date (MM/DD/YYYY)'] + ' ' + la['Wheels-off Time'] )
+
+
+
+# Localize the time to US/Central: times_tz_central
+
+times_tz_central = times_tz_none.dt.tz_localize('US/Central')
+
+
+
+# Convert the datetimes from US/Central to US/Pacific
+
+times_tz_pacific = times_tz_central.dt.tz_convert('US/Pacific')
 
